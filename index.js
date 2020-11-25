@@ -30,7 +30,7 @@ const incompatiblePresets = [
   "@storybook/preset-create-react-app",
 ];
 
-const checkPresets = (options): void => {
+const checkPresets = (options) => {
   let presetsList = options.presetsList || [];
 
   presetsList.forEach((preset) => {
