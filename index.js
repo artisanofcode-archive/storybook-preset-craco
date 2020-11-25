@@ -49,6 +49,8 @@ const webpack = (webpackConfig = {}, options) => {
       ? createWebpackProdConfig
       : createWebpackDevConfig;
 
+  checkPresets(options);
+
   const cracoConfigFile =
     options.cracoConfigFile || resolve(CWD, "craco.config.js");
 
