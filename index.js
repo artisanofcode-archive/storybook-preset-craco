@@ -115,9 +115,11 @@ const webpack = (webpackConfig = {}, options) => {
     ),
     resolve: {
       ...webpackConfig.resolve,
+      alias: {...webpackConfig.resolve.alias, ...cracoWebpackConfig.resolve.alias},
       extensions: cracoWebpackConfig.resolve.extensions,
       modules: [
         ...((webpackConfig.resolve && webpackConfig.resolve.modules) || []),
+        ...((cracoWebpackConfig.resolve && cracoWebpackConfig.resolve.modules) || []),
         join(scriptsPath, "node_modules"),
         ...getModulePath(CWD),
       ],
