@@ -4,7 +4,24 @@ One-line [craco](https://github.com/gsoft-inc/craco) configuration for Storybook
 
 This preset is designed to use alongside [`@storybook/react`](https://github.com/storybookjs/storybook/tree/master/app/react).
 
-## Basic usage
+## 🛠 Installing
+
+### Yarn
+
+```
+yarn add storybook-preset-craco
+```
+
+### npm
+
+```
+npm i storybook-preset-craco
+```
+
+## 🎓 Usage
+
+
+### Basic
 
 First, install this preset to your project.
 
@@ -25,8 +42,6 @@ Once installed, add this preset to the appropriate file:
     addons: ["storybook-preset-craco"],
   };
   ```
-
-## Advanced usage
 
 ### Usage with Docs
 
@@ -64,3 +79,16 @@ module.exports = {
   ],
 };
 ```
+
+## ⚖️ Licence
+
+This project is licensed under the [MIT licence](http://dan.mit-license.org/).
+
+All documentation and images are licenced under the 
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc_by_sa].
+
+[cc_by_sa]: https://creativecommons.org/licenses/by-sa/4.0/
+
+## 📝 Meta
+
+This project uses [Semantic Versioning](http://semver.org/).
