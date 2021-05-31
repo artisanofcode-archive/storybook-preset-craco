@@ -42,6 +42,8 @@ Once installed, add this preset to the appropriate file:
     addons: ["storybook-preset-craco"],
   };
   ```
+  
+  **Note**: Don't forget to comment or remove the `@storybook/preset-create-react-app` from `addons`.
 
 ### Usage with Docs
 
