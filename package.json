@@ -13,7 +13,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@storybook/preset-create-react-app": "^3.1.5"
+    "@storybook/preset-create-react-app": ">=3.1.5"
   },
   "peerDependencies": {
     "@babel/core": "*",
