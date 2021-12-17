@@ -86,12 +86,12 @@ const webpack = (webpackConfig = {}, options) => {
         )
     );
 
-  // Select the relevent craco rules and add the Storybook config directory.
+  // Select the relevant craco rules and add the Storybook config directory.
   logger.info(`=> Modifying craco rules.`);
 
   const craRules = processCraConfig(cracoWebpackConfig, options);
 
-  // CRA uses the `ModuleScopePlugin` to limit suppot to the `src` directory.
+  // CRA uses the `ModuleScopePlugin` to limit support to the `src` directory.
   // Here, we select the plugin and modify its configuration to include Storybook config directory.
   const plugins = cracoWebpackConfig.resolve.plugins.map((plugin) => {
     if (plugin.appSrcs) {
@@ -132,7 +132,7 @@ const webpack = (webpackConfig = {}, options) => {
 const webpackFinal = (webpackConfig = {}, options) => {
   logger.info(`=> Removing storybook default rules.`);
 
-  // these are suppreseed by storybook when @storybook/preset-create-react-app is present.
+  // these are suppressed by storybook when @storybook/preset-create-react-app is present.
   const rules = webpackConfig.module.rules.filter(
     (rule) =>
       !(
